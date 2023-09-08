@@ -38,4 +38,42 @@ message = 4 > 2 and 33 < 43
 message2 = 4 < 2 or 33 < 43
 x = False
 
-print(not x)
+#PEMMDAS
+
+p = 10
+j = u >= 10
+
+z = 7 // 2
+t = 7 / 2
+print(t)
+
+def my_function():
+    print(I am so cool!)
+          
+my_function()
+
+def add(num1, num2):
+    print(num1 + num2)
+
+my_name = "tacocat"
+words = my_name.split('o')
+print(words)
+
+def add(num1, num2)
+    print (num1, num2)
+add(1,2)
+
+def subtract(num1, num2):
+    return num1 - num2
+
+difference = subtract(4,2)
+
+print (difference)
+
+{
+    'name': 'Bob',
+    'age': 47,
+    'Job': 'Janitor',
+    'is_male': True
+}
+
