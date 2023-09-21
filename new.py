@@ -1,7 +1,5 @@
 print: input("What's your name? ")
 
-print: filter()
-
 def trip_planner(start, end, duration, mode):
     print(f"It lookss like you're starting your trip from {start}")
     print(f"You are planning to go to {end}")
@@ -15,3 +13,4 @@ def print_my_name():
 
 print_my_name('Ada')
 
+list("cheese, potatos, bread, grass, tomato")
