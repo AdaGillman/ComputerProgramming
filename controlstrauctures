@@ -8,4 +8,16 @@ for i in range(50):
         break
     else:
         print(i)
+    
+car_color = "Blue"
+car_make = "Tesla"
 
+if car_color == "Blue":
+    if car_make == "Tesla":
+        print("My car is a Blue Tesla")
+    else:
+        print("My car is blue")
+elif car_color == "Red":
+    print("My car is a red ferrari")
+else:
+    print("I just have a bike")
