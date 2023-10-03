@@ -55,3 +55,44 @@ print(sum)
 
 numbers = [2,5,6,10,15,20,25]
 
+for i in numbers:
+    if (i % 5 ==0):
+        print(i)
+
+list1 = ['Mango','Banana','Orange']
+list2 = []
+
+list2 = list1.copy()
+
+print(list2)
+
+numbers4 = [1,4,50,80,12]
+for i in numbers4:
+    print(max(numbers4))
+    break
+    
+numbers = [1,4,50,80,12]
+for i in numbers:
+    print(min(numbers))
+    break
+
+numbers = [1,4,50,80,12]
+for i in numbers:
+    print(sorted(numbers))
+    break
+
+numbers = [1,4,50,80,12]
+for i in numbers:
+    print(sorted(numbers, reverse=True))
+    break
+
+for i in range(3, 21):
+    if (i % 3 == 0):
+        print(i)
+
+for i in range(5, 20):
+    if (i % 5 == 0):
+        print(i)
+
+for i in reversed(range(11)):
+    print(i)
