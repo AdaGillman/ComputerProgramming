@@ -1,25 +1,30 @@
 word = "ceiling"
 
-message = len(word)*"_"
+letters_guessed = []
 
-correctletters = ("c" and "e" and "i" and "l" and "n" and "g")
-
-print("Welcome to Guess a Word!")
+print("Welcome to Hangman!")
 
 input("Are you ready to start? ")
 
 print("Okay let's start!")
-letter = input(f"Guess a letter: {message}. ")
 
-while len(letter) > 1:
-    print("I'm sorry but you can only guess one letter")
-    letter = input(f"Guess a letter: {message}. ")
+def display_clue(word, letters_guessed):
+    clue = ""
+    for letter in word:
+        if letter.lower() in letters_guessed or letter.upper() in letters_guessed:
+            clue += letter + " "
+        else:
+            clue += "_ "
+    return clue
 
-while letter == "a" or "b" or "d" or "f" or "h" or "j" or "k" or "m" or "o" or "p" or "q" or "r" or "s" or "t" or "u" or "v" or "w" or "x" or "y" or "z":
-    print("Guess another letter, that ones not in the word.")
-    letter = input(f"Guess a letter: {message}. ")
-
-for i in range(len(word)):
-    if word[i] in correctletters:
-        print(letter, end='')
-        print()
+while True:
+    print(display_clue(word, letters_guessed))
+    guess = input("Guess a letter: ").upper()
+    if guess in letters_guessed:
+        print("Guess again, you've already guessed that letter.")
+        continue
+    letters_guessed.append(guess)
+    if all(letter.lower() in letters_guessed or letter.upper() in letters_guessed for letter in word):
+        print(f"Good job! You got the word: {word}")
+        print("You are so good at this game!")
+        break
