@@ -1,9 +1,3 @@
-wordlist = []
-
-import random
-f = open("sowpods.txt")
-for i in f:
-    wordlist.append(i) 
 
 word = random.choice(wordlist)
 
@@ -18,7 +12,7 @@ print("Okay let's start!")
 turns = 6
 
 while turns > 0:
-    def display_clue(word):
+    def display_clue(word, letters_guessed):
         clue = ""
         for letter in word:
             if letter.lower() in letters_guessed or letter.upper() in letters_guessed:

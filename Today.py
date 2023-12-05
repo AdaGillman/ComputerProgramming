@@ -77,3 +77,5 @@ print (difference)
     'is_male': True
 }
 
+if message2 > 5:
+    print(message1 * .05)

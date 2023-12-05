@@ -7,8 +7,7 @@ def trip_planner(start, end, duration, mode):
     print(f"I see you are taking a {mode}")
 
 trip_planner('Paradigm', 'the Delta Center', 0.5, 'car')
-
-def print_my_name():
+print_my_name():
     print(name)
 
 print_my_name('Ada')
